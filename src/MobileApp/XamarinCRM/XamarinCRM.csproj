@@ -95,6 +95,8 @@
     <Compile Include="ViewModels\Splash\SplashViewModel.cs" />
     <Compile Include="Localization\TextResources.Designer.cs">
       <DependentUpon>TextResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Localization\ILocalize.cs" />
     <Compile Include="Cells\Sales\LeadListItemCell.cs" />
@@ -208,7 +210,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\TextResources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>StronglyTypedResourceBuilder</Generator>
       <LastGenOutput>TextResources.Designer.cs</LastGenOutput>
       <LogicalName>XamarinCRM.TextResources.resources</LogicalName>
     </EmbeddedResource>

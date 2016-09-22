@@ -81,7 +81,7 @@ namespace XamarinCRM.Pages
                     case MenuType.About:
                         page = new CRMNavigationPage(new AboutItemListPage
                             { 
-                                Title = TextResources.MainTabs_Products, 
+                                Title = TextResources.MainTabs_About, 
                                 Icon = new FileImageSource { File = "about.png" },
                                 BindingContext = new AboutItemListViewModel() { Navigation = this.Navigation }
                             });
