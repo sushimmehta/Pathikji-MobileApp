@@ -27,6 +27,7 @@ using XamarinCRM.Pages;
 using System.Threading.Tasks;
 using Plugin.Connectivity;
 using Xamarin.Forms.Xaml;
+using XamarinCRM.Statics;
 
 //[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
@@ -54,6 +55,9 @@ namespace XamarinCRM
 
 
             // If the App.IsAuthenticated property is false, modally present the SplashPage.
+
+            //sushim 22-09-2016 Bypassed the splash screen and went directly to DEMO
+            /*
             if (!_AuthenticationService.IsAuthenticated)
             {
                 MainPage = new SplashPage();
@@ -62,6 +66,13 @@ namespace XamarinCRM
             {
                 GoToRoot();
             }
+            */
+            _AuthenticationService.BypassAuthentication();
+            // Broadcast a message that we have sucessdully authenticated.
+            // This is mostly just for Android. We need to trigger Android to call the SalesDashboardPage.OnAppearing() method,
+            // because unlike iOS, Android does not call the OnAppearing() method each time that the Page actually appears on screen.
+            MessagingCenter.Send(this, MessagingServiceConstants.AUTHENTICATED);
+            GoToRoot();
 
         }
 
