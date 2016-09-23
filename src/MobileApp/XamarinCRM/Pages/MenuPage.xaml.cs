@@ -34,7 +34,8 @@ namespace XamarinCRM.Pages
 
                 };
 
-            ListViewMenu.SelectedItem = menuItems[0];
+            //set "About" as the selected item
+            ListViewMenu.SelectedItem = menuItems[2];
 
             ListViewMenu.ItemSelected += async (sender, e) => 
                 {
