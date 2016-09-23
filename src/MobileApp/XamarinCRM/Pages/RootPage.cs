@@ -33,7 +33,9 @@ namespace XamarinCRM.Pages
                 Icon = "slideout.png"
             };
             //setup home page
-            NavigateAsync(MenuType.Sales);
+
+            //NavigateAsync(MenuType.Sales);
+            NavigateAsync(MenuType.About);
         }
 
         void SetDetailIfNull(Page page)
@@ -131,6 +133,7 @@ namespace XamarinCRM.Pages
                     Title = TextResources.MainTabs_Customers, 
                     Icon = new FileImageSource { File = "customers.png" } 
                 });
+                
             Children.Add(new CRMNavigationPage(new CategoryListPage
                     { 
                         BindingContext = new CategoriesViewModel() { Navigation = this.Navigation }, 
