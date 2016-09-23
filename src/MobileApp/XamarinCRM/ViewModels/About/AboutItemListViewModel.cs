@@ -90,15 +90,14 @@ namespace XamarinCRM.ViewModels
                 },
             };
 
-            Overview = 
-                "Xamarin CRM is a demo app whose imagined purpose is to serve the mobile workforce of a " +
-            "fictitious company that sells 3D printer hardware and supplies. The app empowers salespeople " +
-            "to track their sales performance, manage leads, view their contacts, manage orders, and " +
-            "browse a product catalog.";
+            Overview =
+            "Sadhu vesh mein PATHIK";
 
-            ListHeading = 
-                "The app is built with Xamarin Platform and Xamarin.Forms, and takes advantage of " +
-                "several other supporting technologies:";
+            ListHeading =
+            "Sant Pathikji Maharaj was born in a kanyakubj-brahmin family. " +
+            "He spent his childhood with his maternal grand parents. " +
+            "There he acquired primary education. " +
+            "From the beginning, he had faith and reverence for local gods and godesses.";
         }
     }
 }

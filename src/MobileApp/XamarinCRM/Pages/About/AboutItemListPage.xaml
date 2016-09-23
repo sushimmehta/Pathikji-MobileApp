@@ -13,15 +13,15 @@ xmlns:views="clr-namespace:XamarinCRM.Views">
 				LineBreakMode="WordWrap" 
 				Text="{Binding Overview}" />
 			</ContentView>
-			<!--<Image 
+			<Image 
 			Source="about_background.png" 
-			Aspect="AspectFit" />-->
+			Aspect="AspectFit" />
 			<ContentView Padding="20">
 				<Label 
 				LineBreakMode="WordWrap" 
 				Text="{Binding ListHeading}" />
 			</ContentView>
-			<ListView
+			<!--<ListView
 			x:Name="AboutItemList" 
 			ItemsSource="{Binding Items}" 
 			ItemTapped="AboutItemTapped" 
@@ -39,7 +39,7 @@ xmlns:views="clr-namespace:XamarinCRM.Views">
 						</ViewCell>
 					</DataTemplate>
 				</ListView.ItemTemplate>
-			</ListView>
+			</ListView>-->
 		</StackLayout>
 	</ScrollView>
 </base:AboutItemListPageXaml>
