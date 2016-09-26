@@ -4,4 +4,7 @@ This app is dedicated to the Brahmleen Swami pathikji Maharaj. This app serves a
 
 #Source
 The app has been built based off the (open source) code at https://github.com/xamarin/app-crm/wiki/Setup-Xamarin-CRM-app
+Icons have been taken from the royalty free source: https://www.uxpin.com/uxpin-icon-set.html
+
+
 
